@@ -509,7 +509,7 @@ const FormComponent = ({ history }) => {
           </FormGroup>
         </Form.Row>
         <h1 className="text-dark font-weight-bold py-4">
-          Educational Detail 
+          Educational Detail (Add 2 educational details)
         </h1>
         <Form.Row>
           <FormGroup as={Col} sm={12} md={6}>
