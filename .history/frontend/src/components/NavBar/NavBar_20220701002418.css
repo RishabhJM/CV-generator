@@ -1,0 +1,8 @@
+.header{
+    justify-self: center;
+    background-color: blue;
+}
+
+.header a{
+    color: white;
+}

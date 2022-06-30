@@ -1,0 +1,11 @@
+.header{
+    background-color: blue;
+}
+
+.nav-bar{
+    align-self: center;
+}
+
+.header a{
+    color: white;
+}

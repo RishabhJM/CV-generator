@@ -6,11 +6,11 @@ import {Link} from "react-router-dom"
 const NavBar = () => {
   return (
     <nav>
-      <header className="nav-header">
+      <header className="header">
         {/* <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect> */}
           {/* <NavbarBrand href="/" className="font-weight-bold">CV Generator App</NavbarBrand> */}
-          <h1 className="nav-bar">CV Generator</h1>
-        {/* </Navbar> */}
+          <h1 className="nav-bar"><Link to="/">CV Generator</Link></h1>
+        </Navbar>
       </header>
     </nav>
   );

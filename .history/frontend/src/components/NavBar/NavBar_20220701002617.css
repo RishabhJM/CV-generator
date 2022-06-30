@@ -1,0 +1,12 @@
+.header{
+    background-color: blue;
+    margin: 20px;
+}
+
+.nav-bar{
+    align-self: center;
+}
+
+.header a{
+    color: white;
+}

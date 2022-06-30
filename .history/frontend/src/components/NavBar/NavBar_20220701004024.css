@@ -1,0 +1,15 @@
+.header{
+    background-color: blue;
+    color: white;
+    padding: 20px;
+}
+h1 Link:hover{
+    text-decoration: none !important;
+}
+.nav-bar{
+    align-self: center;
+}
+
+.header a{
+    color: white;
+}
