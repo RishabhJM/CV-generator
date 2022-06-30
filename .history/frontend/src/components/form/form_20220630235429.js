@@ -607,7 +607,7 @@ const FormComponent = ({ history }) => {
         </Form.Row>
         <h1 className="text-dark font-weight-bold py-5">
           {" "}
-          Professional Experience Details (Add 3 latest experiences){" "}
+          Professional Experience Details (Add 2 latest experiences){" "}
         </h1>
         <Form.Row>
           <FormGroup as={Col} sm={12} md={6}>
@@ -624,7 +624,7 @@ const FormComponent = ({ history }) => {
             <FormLabel> Company Name </FormLabel>
             <FormControl
               type="text"
-              placeholder="e.g Google Inc."
+              placeholder="company name"
               onChange={handleUser1stCompanyName}
               value={user1stCompanyName}
               required
@@ -676,7 +676,7 @@ const FormComponent = ({ history }) => {
             <FormLabel> Company Name </FormLabel>
             <FormControl
               type="text"
-              placeholder="e.g Google Inc."
+              placeholder="company name"
               onChange={handleUser2ndCompanyName}
               value={user2ndCompanyName}
               required
@@ -728,7 +728,7 @@ const FormComponent = ({ history }) => {
             <FormLabel> Company Name </FormLabel>
             <FormControl
               type="text"
-              placeholder="e.g Google Inc."
+              placeholder="company name"
               onChange={handleUser3rdCompanyName}
               value={user3rdCompanyName}
               required
@@ -771,7 +771,7 @@ const FormComponent = ({ history }) => {
             <Form.Control
               as="textarea"
               rows={6}
-              placeholder="e.g HTML | CSS| REACTJS | NODEJS | EXPRESSJS"
+              placeholder="e.g HTML|CSS|REACTJS|NODEJS|EXPRESSJS"
               onChange={handleUserSkills}
               value={userSkills}
               required

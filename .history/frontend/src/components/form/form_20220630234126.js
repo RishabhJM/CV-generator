@@ -451,7 +451,7 @@ const FormComponent = ({ history }) => {
             <FormLabel>Username</FormLabel>
             <FormControl
               type="text"
-              placeholder="e.g homelander123"
+              placeholder="e.g johnDoe123"
               onChange={handleUserGitHubProfileName}
               value={userGitHubProfileName}
               required
@@ -476,7 +476,7 @@ const FormComponent = ({ history }) => {
             <FormLabel>Username</FormLabel>
             <FormControl
               type="text"
-              placeholder="e.g homelander123"
+              placeholder="e.g johnDoe123"
               onChange={handleUserLinkedInProfileName}
               value={userLinkedInProfileName}
               required
@@ -501,7 +501,7 @@ const FormComponent = ({ history }) => {
             <FormLabel>Username</FormLabel>
             <FormControl
               type="text"
-              placeholder="homelander.com"
+              placeholder="johnDoe.com"
               onChange={handleUserPersonalWebsiteLink}
               value={userPersonalWebsiteLink}
               required
@@ -513,10 +513,20 @@ const FormComponent = ({ history }) => {
         </h1>
         <Form.Row>
           <FormGroup as={Col} sm={12} md={6}>
+            <FormLabel> High school degree </FormLabel>
+            <FormControl
+              type="text"
+              placeholder="e.g metric with computer sciences"
+              onChange={handleUserHighSchoolDegreeName}
+              value={userHighSchoolDegreeName}
+              required
+            />
+          </FormGroup>
+          <FormGroup as={Col} sm={12} md={6}>
             <FormLabel> School Name </FormLabel>
             <FormControl
               type="text"
-              placeholder="e.g Kendriya Vidhyalaya"
+              placeholder="e.g govt school"
               onChange={handleUserHighSchoolName}
               value={userHighSchoolName}
               required
@@ -558,7 +568,7 @@ const FormComponent = ({ history }) => {
             <FormLabel> College degree </FormLabel>
             <FormControl
               type="text"
-              placeholder="e.g Bachelor of Technology in Computer Engineering"
+              placeholder="e.g Intermediate in computer science"
               onChange={handleUserCollegeDegreeName}
               value={userCollegeDegreeName}
               required
@@ -568,7 +578,7 @@ const FormComponent = ({ history }) => {
             <FormLabel> College Name </FormLabel>
             <FormControl
               type="text"
-              placeholder="e.g NSUT"
+              placeholder="e.g MAO College"
               onChange={handleUserCollegeName}
               value={userCollegeName}
               required
@@ -605,6 +615,58 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
         </Form.Row>
+        <Form.Row>
+          <FormGroup as={Col} sm={12} md={6}>
+            <FormLabel> University degree </FormLabel>
+            <FormControl
+              type="text"
+              placeholder="e.g bachelor in computer science"
+              onChange={handleUserBachelorDegreeName}
+              value={userBachelorDegreeName}
+              required
+            />
+          </FormGroup>
+          <FormGroup as={Col} sm={12} md={6}>
+            <FormLabel> University Name </FormLabel>
+            <FormControl
+              type="text"
+              placeholder="e.g university of the punjab"
+              onChange={handleUserUniversityName}
+              value={userUniversityName}
+              required
+            />
+          </FormGroup>
+        </Form.Row>
+        <Form.Row>
+          <FormGroup as={Col} sm={12} md={4}>
+            <FormLabel>Starting Date</FormLabel>
+            <FormControl
+              type="date"
+              onChange={handleUserBachelorStartingDate}
+              value={userBachelorStartingDate}
+              required
+            />
+          </FormGroup>
+          <FormGroup as={Col} sm={12} md={4}>
+            <FormLabel>Ending Date</FormLabel>
+            <FormControl
+              type="date"
+              onChange={handleUserBachelorDegreeEndingDate}
+              value={userBachelorEndingDate}
+              required
+            />
+          </FormGroup>
+          <FormGroup as={Col} sm={12}>
+            <FormLabel>Describe your experience</FormLabel>
+            <Form.Control
+              as="textarea"
+              rows={6}
+              onChange={handleUserUniversityExperience}
+              value={userUniversityExperience}
+              required
+            />
+          </FormGroup>
+        </Form.Row>
         <h1 className="text-dark font-weight-bold py-5">
           {" "}
           Professional Experience Details (Add 3 latest experiences){" "}
@@ -624,7 +686,7 @@ const FormComponent = ({ history }) => {
             <FormLabel> Company Name </FormLabel>
             <FormControl
               type="text"
-              placeholder="e.g Google Inc."
+              placeholder="company name"
               onChange={handleUser1stCompanyName}
               value={user1stCompanyName}
               required
@@ -676,7 +738,7 @@ const FormComponent = ({ history }) => {
             <FormLabel> Company Name </FormLabel>
             <FormControl
               type="text"
-              placeholder="e.g Google Inc."
+              placeholder="company name"
               onChange={handleUser2ndCompanyName}
               value={user2ndCompanyName}
               required
@@ -728,7 +790,7 @@ const FormComponent = ({ history }) => {
             <FormLabel> Company Name </FormLabel>
             <FormControl
               type="text"
-              placeholder="e.g Google Inc."
+              placeholder="company name"
               onChange={handleUser3rdCompanyName}
               value={user3rdCompanyName}
               required
@@ -771,7 +833,7 @@ const FormComponent = ({ history }) => {
             <Form.Control
               as="textarea"
               rows={6}
-              placeholder="e.g HTML | CSS| REACTJS | NODEJS | EXPRESSJS"
+              placeholder="e.g HTML|CSS|REACTJS|NODEJS|EXPRESSJS"
               onChange={handleUserSkills}
               value={userSkills}
               required

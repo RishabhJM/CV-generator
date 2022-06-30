@@ -771,7 +771,7 @@ const FormComponent = ({ history }) => {
             <Form.Control
               as="textarea"
               rows={6}
-              placeholder="e.g HTML | CSS| REACTJS | NODEJS | EXPRESSJS"
+              placeholder="e.g HTML|CSS|REACTJS|NODEJS|EXPRESSJS"
               onChange={handleUserSkills}
               value={userSkills}
               required

@@ -605,6 +605,58 @@ const FormComponent = ({ history }) => {
             />
           </FormGroup>
         </Form.Row>
+        <Form.Row>
+          <FormGroup as={Col} sm={12} md={6}>
+            <FormLabel> University degree </FormLabel>
+            <FormControl
+              type="text"
+              placeholder="e.g bachelor in computer science"
+              onChange={handleUserBachelorDegreeName}
+              value={userBachelorDegreeName}
+              required
+            />
+          </FormGroup>
+          <FormGroup as={Col} sm={12} md={6}>
+            <FormLabel> University Name </FormLabel>
+            <FormControl
+              type="text"
+              placeholder="e.g university of the punjab"
+              onChange={handleUserUniversityName}
+              value={userUniversityName}
+              required
+            />
+          </FormGroup>
+        </Form.Row>
+        <Form.Row>
+          <FormGroup as={Col} sm={12} md={4}>
+            <FormLabel>Starting Date</FormLabel>
+            <FormControl
+              type="date"
+              onChange={handleUserBachelorStartingDate}
+              value={userBachelorStartingDate}
+              required
+            />
+          </FormGroup>
+          <FormGroup as={Col} sm={12} md={4}>
+            <FormLabel>Ending Date</FormLabel>
+            <FormControl
+              type="date"
+              onChange={handleUserBachelorDegreeEndingDate}
+              value={userBachelorEndingDate}
+              required
+            />
+          </FormGroup>
+          <FormGroup as={Col} sm={12}>
+            <FormLabel>Describe your experience</FormLabel>
+            <Form.Control
+              as="textarea"
+              rows={6}
+              onChange={handleUserUniversityExperience}
+              value={userUniversityExperience}
+              required
+            />
+          </FormGroup>
+        </Form.Row>
         <h1 className="text-dark font-weight-bold py-5">
           {" "}
           Professional Experience Details (Add 3 latest experiences){" "}
@@ -624,7 +676,7 @@ const FormComponent = ({ history }) => {
             <FormLabel> Company Name </FormLabel>
             <FormControl
               type="text"
-              placeholder="e.g Google Inc."
+              placeholder="company name"
               onChange={handleUser1stCompanyName}
               value={user1stCompanyName}
               required
@@ -676,7 +728,7 @@ const FormComponent = ({ history }) => {
             <FormLabel> Company Name </FormLabel>
             <FormControl
               type="text"
-              placeholder="e.g Google Inc."
+              placeholder="company name"
               onChange={handleUser2ndCompanyName}
               value={user2ndCompanyName}
               required
@@ -728,7 +780,7 @@ const FormComponent = ({ history }) => {
             <FormLabel> Company Name </FormLabel>
             <FormControl
               type="text"
-              placeholder="e.g Google Inc."
+              placeholder="company name"
               onChange={handleUser3rdCompanyName}
               value={user3rdCompanyName}
               required
@@ -771,7 +823,7 @@ const FormComponent = ({ history }) => {
             <Form.Control
               as="textarea"
               rows={6}
-              placeholder="e.g HTML | CSS| REACTJS | NODEJS | EXPRESSJS"
+              placeholder="e.g HTML|CSS|REACTJS|NODEJS|EXPRESSJS"
               onChange={handleUserSkills}
               value={userSkills}
               required
