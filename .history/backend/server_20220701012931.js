@@ -7,10 +7,11 @@ const app = express();
 app.use(cors());
 require("dotenv").config();
 
-
+const port = process.env.PORT || 5000;
+const connection_url = "mongodb+srv://cv-generator:F88OD6QwMJYNRK9h@cluster0.olpcz.mongodb.net/?retryWrites=true&w=majority"
 
 mongoose
-  .connect(process.env.DB_URL, {        //
+  .connect(connection_url, {        //process.env.DB_URL
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

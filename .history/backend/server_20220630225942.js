@@ -7,10 +7,8 @@ const app = express();
 app.use(cors());
 require("dotenv").config();
 
-
-
 mongoose
-  .connect(process.env.DB_URL, {        //
+  .connect(process.env.DB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

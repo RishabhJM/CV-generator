@@ -7,10 +7,8 @@ const app = express();
 app.use(cors());
 require("dotenv").config();
 
-
-
 mongoose
-  .connect(process.env.DB_URL, {        //
+  .connect("mongodb+srv://cv-generator:F88OD6QwMJYNRK9h@cluster0.olpcz.mongodb.net/?retryWrites=true&w=majority", {        //process.env.DB_URL
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
