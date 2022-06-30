@@ -6,7 +6,7 @@
   outline: none;
   color: inherit;
   transition: all 0.5s;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
