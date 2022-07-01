@@ -340,7 +340,6 @@ const FormComponent = ({ history }) => {
               placeholder="Last Name"
               onChange={handleUserSecondName}
               value={userSecondName}
-              required
             />
           </FormGroup>
           <FormGroup as={Col} sm={12} md={4}>
@@ -428,7 +427,6 @@ const FormComponent = ({ history }) => {
               rows={6}
               onChange={handleUserProfileDescription}
               value={userProfileDescription}
-              required
             />
           </FormGroup>
         </Form.Row>
