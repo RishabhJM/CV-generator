@@ -38,25 +38,30 @@ const ResumeComponent = ({ match }) => {
                   <h6 className="h5 text-dark">
                     {userResumeData.userProfession}
                   </h6>
-                  <div className="w-25 d-flex justify-content-between user-social-icons">
+                  <div className="w-25 user-social-icons">
                     <a
                       href={`https://www.linkedin.com/in/${userResumeData.userLinkedInProfileName}/`}
                       className="text-dark"
                     >
                       <FaLinkedin />
                     </a>
+                    {`${' '+userResumeData.userLinkedInProfileName}`}
+                    <br></br>
                     <a
                       href={userResumeData.userPersonalWebsiteLink}
                       className="text-dark"
                     >
                       <BiLink />
                     </a>
+                    {' '+userResumeData.userPersonalWebsiteLink}
+                    <br></br>
                     <a
                       href={`https://github.com/${userResumeData.userGitHubProfileName}`}
                       className="text-dark"
                     >
                       <FaGithubSquare />
                     </a>
+                    {' '+userResumeData.userGitHubProfileName}
                   </div>
                 </Col>
                 <Col sm={12} md={6}>
