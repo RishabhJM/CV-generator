@@ -31,7 +31,7 @@ const ResumeComponent = ({ match }) => {
               <Row className="border-bottom border-dark w-100">
                 <Col sm={12} md={6} className="py-4 px-4">
                   <h1 className="text-dark font-weight-bold">
-                    {userResumeData.userFirstName}  
+                    {userResumeData.userFirstName}
                     {userResumeData.userSecondName}
                   </h1>
                   <h6 className="h5 text-dark">

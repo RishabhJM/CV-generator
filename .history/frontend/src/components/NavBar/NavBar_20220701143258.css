@@ -1,6 +1,4 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap'); */
-
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 .nav-header{
     background-color: black;
     color: white;
@@ -9,5 +7,5 @@
 }
 
 .nav-bar{
-    font-family: 'Acme', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
