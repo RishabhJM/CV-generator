@@ -10,9 +10,8 @@ const ResumeComponent = ({ match }) => {
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
     const fetchedData = async () => {
-      // "https://cv-generator-mern.herokuapp.com/api"
       await axios
-        .get(`http://localhost:9999/api/${match.params.id}`)
+        .get(`https://cv-generator-nsut.herokuapp.com/api/${match.params.id}`)
         .then((res) => {
           if (res.data.success) {
             setMounted(true);

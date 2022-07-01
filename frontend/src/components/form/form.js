@@ -262,9 +262,8 @@ const FormComponent = ({ history }) => {
   // sum up all the information into one object
   const handleUserResumeData = (e) => {
     e.preventDefault();
-    // https://cv-generator-mern.herokuapp.com/api
     axios
-      .post("http://localhost:9999/api", {
+      .post("https://cv-generator-nsut.herokuapp.com/api", {
         userFirstName,
         userSecondName,
         userGender,
