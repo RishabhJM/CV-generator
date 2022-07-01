@@ -8,21 +8,18 @@
   outline: none;
   color: inherit;
   transition: all 0.5s;
+  font-family: 'Raleway', sans-serif;
 }
 
 body {
   background-color: #f7e7f7 !important;
-  
 }
-.form-container, .resume-container{
-  font-family: 'Raleway', sans-serif;
-}
+
 input,
 select,
 textarea {
   background-color: transparent !important;
   border-bottom: 1px solid #cac7c7;
-  
 }
 
 .resume-section {
@@ -57,9 +54,6 @@ textarea {
       display:none;
     }
     #nav-id{
-      display: none;
-    }
-    .footer{
       display: none;
     }
 }

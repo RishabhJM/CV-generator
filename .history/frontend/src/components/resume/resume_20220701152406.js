@@ -26,7 +26,7 @@ const ResumeComponent = ({ match }) => {
   return (
     <Fragment>
       {mounted ? (
-        <Container className="mt-4 mb-2 resume-container">
+        <Container className="mt-4 mb-2">
           <main className="resume-section pl-4">
             <header>
               <Row className="border-bottom border-dark w-100">
@@ -45,20 +45,21 @@ const ResumeComponent = ({ match }) => {
                     >
                       <FaLinkedin />
                     </a>
-                    <br></br>
+                    <span>Rjmyes</span>
                     <a
                       href={userResumeData.userPersonalWebsiteLink}
                       className="text-dark"
                     >
                       <BiLink />
                     </a>
-                    <br></br>
+                    <span>Rjmyes</span>
                     <a
                       href={`https://github.com/${userResumeData.userGitHubProfileName}`}
                       className="text-dark"
                     >
                       <FaGithubSquare />
                     </a>
+                    <span>Rjmyes</span>
                   </div>
                 </Col>
                 <Col sm={12} md={6}>

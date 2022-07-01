@@ -26,7 +26,7 @@ const ResumeComponent = ({ match }) => {
   return (
     <Fragment>
       {mounted ? (
-        <Container className="mt-4 mb-2 resume-container">
+        <Container className="mt-4 mb-2">
           <main className="resume-section pl-4">
             <header>
               <Row className="border-bottom border-dark w-100">

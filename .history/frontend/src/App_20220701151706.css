@@ -14,15 +14,13 @@ body {
   background-color: #f7e7f7 !important;
   
 }
-.form-container, .resume-container{
-  font-family: 'Raleway', sans-serif;
-}
+
 input,
 select,
 textarea {
   background-color: transparent !important;
   border-bottom: 1px solid #cac7c7;
-  
+  font-family: 'Raleway', sans-serif;
 }
 
 .resume-section {
@@ -57,9 +55,6 @@ textarea {
       display:none;
     }
     #nav-id{
-      display: none;
-    }
-    .footer{
       display: none;
     }
 }

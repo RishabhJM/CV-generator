@@ -14,7 +14,7 @@ body {
   background-color: #f7e7f7 !important;
   
 }
-.form-container, .resume-container{
+.form-container{
   font-family: 'Raleway', sans-serif;
 }
 input,
@@ -57,9 +57,6 @@ textarea {
       display:none;
     }
     #nav-id{
-      display: none;
-    }
-    .footer{
       display: none;
     }
 }

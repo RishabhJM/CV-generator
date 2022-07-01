@@ -12,7 +12,6 @@ function App() {
       <NavBar />
       <Route path="/" exact component={FormComponent} />
       <Route path="/view_resume/:id" exact component={ResumeComponent} />
-      <Footer />
     </Router>
   );
 }

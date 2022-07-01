@@ -320,7 +320,7 @@ const FormComponent = ({ history }) => {
       });
   };
   return (
-    <Container className="mt-5 mb-2 form-container">
+    <Container className="mt-5 mb-2">
       <Form className="form-section">
         <h1 className="text-dark font-weight-bold py-3">General Details</h1>
         <Form.Row>
