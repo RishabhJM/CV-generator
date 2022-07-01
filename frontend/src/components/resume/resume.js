@@ -31,7 +31,7 @@ const ResumeComponent = ({ match }) => {
               <Row className="border-bottom border-dark w-100">
                 <Col sm={12} md={6} className="py-4 px-4">
                   <h1 className="text-dark font-weight-bold">
-                    {userResumeData.userFirstName}
+                    {userResumeData.userFirstName + ' '}
                     {userResumeData.userSecondName}
                   </h1>
                   <h6 className="h5 text-dark">
@@ -67,7 +67,7 @@ const ResumeComponent = ({ match }) => {
             </header>
             <Row className="border-bottom border-dark w-100">
               <h1 className="text-center text-dark w-100 pt-4 font-weight-bold">
-                General Info
+                Personal Information
               </h1>
               <Col sm={12} md={6} className="my-4">
                 <ul>
@@ -110,7 +110,7 @@ const ResumeComponent = ({ match }) => {
             </Row>
             <Row className="border-bottom border-dark w-100">
               <h1 className="text-center text-dark w-100 pt-4 font-weight-bold">
-                Educational Info
+                Educational Information
               </h1>
               <Col className="py-4">
                 <ul>
@@ -148,29 +148,12 @@ const ResumeComponent = ({ match }) => {
                       {userResumeData.userCollegeExperience}
                     </p>
                   </li>
-                  <li>
-                    <h3 className="text-dark font-weight-bold">
-                      3.
-                      {userResumeData.userBachelorDegreeName}
-                    </h3>
-                    <h6 className="text-dark font-weight-bold">
-                      {userResumeData.userUniversityName}
-                    </h6>
-                    <p className="text-dark font-weight-bold">
-                      
-                      {userResumeData.userBachelorStartingDate}/
-                      {userResumeData.userBachelorEndingDate}
-                    </p>
-                    <p className="text-dark font-weight-normal">
-                      {userResumeData.userUniversityExperience}
-                    </p>
-                  </li>
                 </ul>
               </Col>
             </Row>
-            <Row className="w-100">
+            <Row className="border-bottom border-dark w-100">
               <h1 className="text-center text-dark w-100 pt-4 font-weight-bold">
-                Professional Info
+                Professional Information
               </h1>
               <Col className="py-4">
                 <ul>
@@ -229,7 +212,9 @@ const ResumeComponent = ({ match }) => {
               </Col>
             </Row>
             <Row>
-              <h1 className="w-100"> Hands On Skills </h1>
+            <h1 className="text-center text-dark w-100 pt-4 font-weight-bold">
+            Technical Skills
+          </h1>
               <p>{userResumeData.userSkills}</p>
             </Row>
           </main>
