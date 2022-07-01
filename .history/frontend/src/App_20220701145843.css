@@ -34,10 +34,5 @@ textarea {
 
 
 @media print{
-    #printbtn{
-      display:none;
-    }
-    #nav-id{
-      display: none;
-    }
+    
 }

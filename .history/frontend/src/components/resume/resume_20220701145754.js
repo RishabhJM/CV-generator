@@ -3,7 +3,6 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { BiLink } from "react-icons/bi";
 import axios from "axios";
-import "../../App.css"
 
 const ResumeComponent = ({ match }) => {
   const [userResumeData, setUserResumeData] = useState({});
@@ -224,7 +223,6 @@ const ResumeComponent = ({ match }) => {
             as={Col}
             sm={12}
             className="py-2 my-3 text-white font-weight-bold"
-            id="printbtn"
             onClick={window.print}
           >
             Print

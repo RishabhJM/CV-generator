@@ -223,8 +223,7 @@ const ResumeComponent = ({ match }) => {
             variant="dark"
             as={Col}
             sm={12}
-            className="py-2 my-3 text-white font-weight-bold"
-            id="printbtn"
+            className="printBtn py-2 my-3 text-white font-weight-bold"
             onClick={window.print}
           >
             Print
