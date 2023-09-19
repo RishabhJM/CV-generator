@@ -11,7 +11,7 @@ const ResumeComponent = ({ match }) => {
   useEffect(() => {
     const fetchedData = async () => {
       await axios
-        .get(`https://cv-generator-nsut.herokuapp.com/api/${match.params.id}`)
+        .get(`https://cv-generator-8jf8.onrender.com/api/${match.params.id}`)
         .then((res) => {
           if (res.data.success) {
             setMounted(true);
