@@ -263,7 +263,7 @@ const FormComponent = ({ history }) => {
   const handleUserResumeData = (e) => {
     e.preventDefault();
     axios
-      .post("https://cv-generator-nsut.herokuapp.com/api", {
+      .post("https://cv-generator-8jf8.onrender.com/api", {
         userFirstName,
         userSecondName,
         userGender,
